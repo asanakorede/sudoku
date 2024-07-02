@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap') ;
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    /* Light Gray Background */
+}
+
+h1{
+    font-family: "Madimi One", sans-serif;
+    color: #2c3e50;
+    margin-top: 10px;
+}
+
+hr {
+    width: 80%;
+    margin: 20px auto;
+    border-color: #3498db;
+    /* Blue Border Color */
+}
+
+#errors {
+    color: #e74c3c;
+    /* Red Text Color */
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 1px;
+    background-color: #ecf0f1;
+    /* Light Blue Background */
+}
+
+.tile {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #bdc3c7;
+    /* Gray Border Color */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    background-color: #ecf0f1;
+    /* Light Blue Background */
+}
+
+#digits {
+    width: 450px;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3498db;
+    /* Blue Background */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.number {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #2c3e50;
+    /* Dark Gray Border Color */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #e74c3c;
+    /* Red Background */
+    color: #ecf0f1;
+    /* Light Blue Text Color */
+    border-radius: 5px;
+}
+
+.number-selected {
+    background-color: #27ae60;
+    /* Green Background */
+}
+
+.tile-start {
+background-color: blue;
+    /* Yellow Background */
+}
+
+.horizontal-line,
+.vertical-line {
+    border: 1px solid #34495e;
+    /* Dark Blue Border Color */
+}
+
+.horizontal-line {
+    width: 100%;
+}
+
+.vertical-line {
+    height: 100%;
+}    
